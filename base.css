@@ -1,68 +1,53 @@
-/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+/* base.css - Estilos base y reset tipográfico para Colegio Hispano Americano */
 
-@import url(/web/20131218235954cs_/http://www.colegiohispanoamericano.cl/public/charv/cms2/charvcms/templates/yoo_revista/warp/css/base.css);
-
-
-/* New style-related Base Values
-----------------------------------------------------------------------------------------------------*/
-
-body { font: normal 13px/20px Arial, Helvetica, sans-serif; }
-
-h1, h2, h3, h4, h5 {
-	margin: 20px 0 10px 0;
-	text-transform: uppercase;
+*, *::before, *::after {
+  box-sizing: border-box;
 }
 
-h1 { font-size: 28px; line-height: 28px; }
-h2 { font-size: 24px; line-height: 24px; }
-h3 { font-size: 18px; line-height: 18px; }
-h4 { font-size: 16px; line-height: 16px; }
-h5 { font-size: 14px; line-height: 14px; }
-
-h2,
-h5 { color: #444; }
-
-small { color: #aaa; }
-
-hr { border-top-color: #e2e2e2; }
-
-pre {
-	border: 1px solid #e2e2e2;
-	background: #fafafa;
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: "Droid Sans", Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #3a464e;
+  background-color: #eef2f5;
 }
 
-
-/* Useful Snippets
-----------------------------------------------------------------------------------------------------*/
-
-a:not([class]):active,
-a:not([class]):focus {
-	position: relative;
-	top: 1px;
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Kreon", Georgia, "Times New Roman", serif;
+  margin-top: 0;
+  color: #1f3548;
+  font-weight: normal;
 }
 
-a:not([class]):active > *,
-a:not([class]):focus > * {
-	position: relative;
-	top: -1px;
+h1 {
+  font-size: 22px;
+  line-height: 1.25;
 }
-/*
-     FILE ARCHIVED ON 23:59:54 Dec 18, 2013 AND RETRIEVED FROM THE
-     INTERNET ARCHIVE ON 10:32:34 Nov 24, 2026.
-     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
 
-     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
-     SECTION 108(a)(3)).
-*/
-/*
-playback timings (ms):
-  captures_list: 0.627
-  exclusion.robots: 0.088
-  exclusion.robots.policy: 0.066
-  esindex: 0.008
-  cdx.remote: 6.309
-  LoadShardBlock: 107.581 (3)
-  PetaboxLoader3.datanode: 1618.487 (4)
-  PetaboxLoader3.resolve: 80.776 (3)
-  load_resource: 1599.414
-*/
+p {
+  margin: 0 0 12px 0;
+}
+
+a {
+  color: #1b6ca8;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0e4775;
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: 0;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
